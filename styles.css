@@ -1,3 +1,39 @@
 body {
-    background-color: red;
+    image-rendering: -webkit-optimize-contrast;
+    background-image: url('Images/wooden_wall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+    color: rgb(243, 211, 181);
+}
+
+h1 {
+    text-align: center;
+    font-size: 150px;
+}
+p {
+    font-size: 50px;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    width: 15vw;
+    height: 6vw;
+    margin-bottom: 15vw;
+    font-size: 35px;
+    font-family: 'MedievalSharp', cursive;
+    border: none;
+    color: white;
+    background-color: rgb(75, 44, 9);
+    border-radius: 75px;
+}
+button:hover {
+    background-color: rgb(202, 137, 62);
+    cursor: pointer;
 }
