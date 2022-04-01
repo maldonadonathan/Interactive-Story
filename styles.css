@@ -1,12 +1,13 @@
-body {
-    image-rendering: -webkit-optimize-contrast;
-    background-image: url('Images/wooden_wall.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+html {
     font-size: 70px;
     text-align: center;
     font-family: 'MedievalSharp', cursive;
-    color: rgb(243, 211, 181);
+    color: rgb(255, 255, 255);
+}
+
+body {
+    image-rendering: -webkit-optimize-contrast;
+    background-size: cover;
 }
 
 h1 {
@@ -34,7 +35,7 @@ button {
     border-radius: 75px;
 }
 button:hover {
-    background-color: rgb(202, 137, 62);
+    background-color: rgb(139, 93, 40);
     cursor: pointer;
 }
 #items, #buttons {
