@@ -1,19 +1,23 @@
-var who = "";
-
 function partner() {
-    // var who = ""
+    var who = ""
     if (progress.includes("mage")) {
-        who = new "Azriel Snow";
+        who = "Azriel Snow";
     } else if (progress.includes("healer")) {
-        who = new "Valentine Ryall";
-    } else if (progress.includes("defender")) {
-        who = new "Rodor the Admired";
+        who = "Valentine Ryall";
+    } else {
+        who = "Rodor the Admired";
     }
+    return who;
 }
-
-
 var choices = document.getElementById("buttons");
 var items = document.getElementById("items");
+
+mybutton = document.getElementById("buttons");
+
+function scrollUp() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 function removeItems() {
     items.innerHTML = "";
@@ -77,6 +81,9 @@ function backgroundChange() {
     if (progress.includes("tavern")) {
         document.body.style.backgroundImage = "url('Images/tavern.jpg')";
     }
+    if (progress.includes("warlock")) {
+        document.body.style.backgroundImage = "url('Images/whisperingWoods.jpg')";
+    }
 };
 
 
@@ -128,15 +135,18 @@ var story = {
         ]
     },
     warlock: {
-        text: `You have just established your party and begun your journey into Whispering Woods's forest. The forest is relatively dense, and the only way forward was a narrow path. As you continue down the path ahead, you can see a humanoid figure blocking your path. As you approach closer, ${who} warns that it is a warlock, and he seems hostile.`,
+        text: `You have just established your party and begun your journey into Whispering Woods's forest. The forest is relatively dense, and the only way forward was a narrow path. As you continue down the path ahead, you can see a humanoid figure blocking your path. As you approach closer, ${partner()} warns that it is a warlock, and he seems hostile.`,
+        options: [
+            ["Fight", "fightWarlock"],
+            ["Run", "runFromWarlock"]
+        ]
     },
-
+    fightWarlock: {
+        text: "Your party decides to engage in combat with the warlock. You manage to trade some blows; however, his spells are too powerful for your team at your current level. At the last moment, you decided fleeing was the best option. However, as you run, the warlock places a curse on your partner without you knowing.",
+        options: ["Continue", "mentor"]
+    },
+    runFromWarlock: {
+        text: "You decide that the warlock is way too powerful for your team at your current level, and you flee, leaving unscathed, only by a hair.",
+        options: ["Continue", "mentor"],
+    }
 };
-
-
-mybutton = document.getElementById("buttons");
-
-function scrollUp() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
