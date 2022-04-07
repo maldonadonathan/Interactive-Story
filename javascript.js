@@ -86,38 +86,38 @@ var story = {
     }
 };
 
-var partner = "partner"
 
-
-function who() {
-    if (progress.includes("mage")) {
-        partner = "Azriel"
-    } else if (progress.includes("healer")) {
-        partner = "Valentine"
-    } else if (progress.includes("defender")) {
-        partner = "Rodor"
-    }
-    console.log(partner)
-}
 var progress = ["prologue"]
 
 var choices = document.getElementById("buttons");
 var items = document.getElementById("items");
+
+mybutton = document.getElementById("buttons");
+
+function scrollUp() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 function removeItems() {
     items.innerHTML = "";
 }
+
 function start() {
     window.setTimeout(removeItems, 000);
     fade();
 }
+
 function fade() {
     fadeOut();
-}  
+}
+
 function fadeOut() {
     document.getElementById('items').style.opacity = '0';
     document.getElementById('buttons').style.opacity = '0';
     window.setTimeout(fadeIn, 000);
 }
+
 function fadeIn() {
     document.getElementById('items').style.opacity = '1';
     document.getElementById('buttons').style.opacity = '1';
@@ -131,7 +131,7 @@ function addText(text) {
 
 
 function button(text, buttonText) {
-    var button = document.createElement("button"); 
+    var button = document.createElement("button");
     button.innerHTML = text;
     choices.appendChild(button);
     button.addEventListener("click", function() {
@@ -153,14 +153,17 @@ function changeStory() {
 
 }
 document.body.style.backgroundImage = "url('Images/wooden_wall.jpg')";
+
 function backgroundChange() {
     if (progress.includes("prologue")) {
         document.body.style.backgroundImage = "url('Images/castle.jpg')";
-    }  
-    if (progress.includes("tarven")) {
-        document.body.style.backgroundImage = "url('Images/tarven.jpg')";
+    }
+    if (progress.includes("tavern")) {
+        document.body.style.backgroundImage = "url('Images/tavern.jpg')";
+    }
+    if (progress.includes("warlock")) {
+        document.body.style.backgroundImage = "url('Images/whisperingWoods.jpg')";
     }
 };
-
 
 

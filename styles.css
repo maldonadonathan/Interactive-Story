@@ -8,21 +8,25 @@ html {
 body {
     image-rendering: -webkit-optimize-contrast;
     background-size: cover;
+    margin: 5vw;
 }
 
 h1 {
     text-align: center;
     font-size: 150px;
 }
+
 p {
     font-size: 50px;
 }
+
 .button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 button {
     width: 19vw;
     height: 6vw;
@@ -35,11 +39,20 @@ button {
     border-radius: 75px;
     margin-right: 10px;
 }
+
 button:hover {
     background-color: rgb(139, 93, 40);
     cursor: pointer;
 }
-#items, #buttons {
+
+#items,
+#buttons {
     opacity: 1;
     transition: 1s opacity;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
