@@ -24,7 +24,7 @@ p {
     align-items: center;
 }
 button {
-    width: 15vw;
+    width: 19vw;
     height: 6vw;
     margin-top: 10vw;
     font-size: 35px;
@@ -33,6 +33,7 @@ button {
     color: white;
     background-color: rgb(75, 44, 9);
     border-radius: 75px;
+    margin-right: 10px;
 }
 button:hover {
     background-color: rgb(139, 93, 40);
