@@ -11,7 +11,6 @@ var story = {
 
     theEnd:{
         text: `The End`,
-        options: [[`Restart`, 'prologue']]
     },
     tarven: {
         text: `As you enter the Tarnstead Tavern, three adventurers pique your interest. The first adventurer clocks himself in blue robes and emits a magical aura. The second adventurer yields a divine presence and wears a priest-like attire with a cross necklace. Lastly, the last one arms himself with heavy armor, a mighty greatsword, and a great shield.`, 
@@ -97,7 +96,7 @@ var story = {
     },
     dragonFightMageWizard: {
         text: `The dragon is sleeping, but you struggle to empathize with such a beast. The walls are decorated in the bodies of his past foes, and his moat was drenched in the blood of his enemies. Killing him, you realized, would be a favor to humanity. You begin to hover over him, yet he wakes up before you can slash his throat. He attempts to strike your chest with a single claw, and as you struggle to get back on your feet, Azriel uses a Chaos Bolt and hits the dragon, knocking him down instantaneously. While you have every opportunity to conquer the dragon, Azriel continues in their plague of doom. He casts Lightning Bolt. A giant lightning bolt appeared in his hand, and with a throwing motion, it launched at the dragon, piercing through the tough dragon hide. The walls are now painted red, and you defeated the dragon. Finally, having accomplished your mission, you head back to the castle to meet the King. You possess a dragon's fang, and it is enough for the King to deem you as a dragonslayer. The public now reveres you, and the dragon has been slain—the end.`, 
-        options: [[]]
+        options: [[`The End`, `theEnd`]]
     }, 
     dragontailMageWitch: {
         text: `After conquering Whispering Wood your party finally made it into another town—the Dragontail—named for being near the dragon’s den. The Dragontail is a popular place for adventurers to hang out. Quest board, finding guilds to join, and taverns to celebrate your victories. After you gather supplies that will help you in the battle you have ahead of you, you decide that it is finally time… You head to the dragon’s den. It is a massive cave on the side of the mountain. The mountain is scorched with withered trees and skeletons of humans and animals. As you enter the cave, the snoring of the dragon causes a breeze of wind to hit you. Descending, you see Nidhogg the Eternal in slumber. He has tough, crystal-like, black scales, with multiple holes in his wings from the countless battles he has been in. You know this will be a hard fight.`, 
@@ -109,7 +108,7 @@ var story = {
     }, 
     joinMage: {
         text:`With you and Azriel’s life on the line, you decide joining her will be the best option. You became an adventurer for the thrill of adventuring, not to become a hero. Vanessa motions to Nidhogg, and he lowers his body. You got on his neck, and the dragon began to take off. In the sky, you can see the world of Lusefell, and from this view, you realize that one day, this world will become your own.`, 
-        options: [[]]
+        options: [[`The End`, `theEnd`]]
     },
     refuseMage: {
         text: `Yet your only goal is to seek adventure; there will be no more adventures if the world were to be destroyed. You refused her offer. Enraged, both Vanessa and the dragon began their attack. The battle starts with you and Azriel preparing for a counterattack.`, 
@@ -185,7 +184,7 @@ var story = {
     },
     dragonFightHealerWizard: {
         text: `The dragon is sleeping, but you struggle to empathize with such a beast. The walls are decorated in the bodies of his past foes, and his moat was drenched in the blood of his enemies. Killing him, you realized, would be a favor to humanity. You begin to hover over him, yet he wakes up before you can slash his throat. He strikes your chest with a single claw, and as he reaches for you, your sword penetrates through his hand. He falls back, and while on the ground, Valentine cures you with a Healing Word Spell. With your new vitality, you separate his head into two symmetrical halves. Finally, having accomplished your mission, you head back to the castle to meet the King. You possess a dragon's fang, and it is enough for the King to deem you as a dragonslayer. The public now reveres you, and the dragon has been slain—the end.`, 
-        options: [[]]
+        options: [[`The End`, `theEnd`]]
     }, 
     dragontailHealerWitch: {
         text: `After conquering Whispering Wood your party finally made it into another town—the Dragontail—named for being near the dragon’s den. The Dragontail is a popular place for adventurers to hang out. Quest board, finding guilds to join, and taverns to celebrate your victories. After you gather supplies that will help you in the battle you have ahead of you, you decide that it is finally time… You head to the dragon’s den. It is a massive cave on the side of the mountain. The mountain is scorched with withered trees and skeletons of humans and animals. As you enter the cave, the snoring of the dragon causes a breeze of wind to hit you. Descending, you see Nidhogg the Eternal in slumber. He has tough, crystal-like, black scales, with multiple holes in his wings from the countless battles he has been in. You know this will be a hard fight.`, 
@@ -197,7 +196,7 @@ var story = {
     }, 
     joinHealer: {
         text:`With you and Valentine ’s life on the line, you decide joining her will be the best option. You became an adventurer for the thrill of adventuring, not to become a hero. Vanessa motions to Nidhogg, and he lowers his body. You got on his neck, and the dragon began to take off. In the sky, you can see the world of Lusefell, and from this view, you realize that one day, this world will become your own.`, 
-        options: [[]]
+        options: [[`The End`, `theEnd`]]
     },
     refuseHealer: {
         text: `Yet your only goal is to seek adventure; there will be no more adventures if the world were to be destroyed. You refused her offer. Enraged, both Vanessa and the dragon began their attack. The battle starts with you and Valentine preparing for a counterattack.`, 
@@ -275,7 +274,7 @@ var story = {
     },
     dragonFightDefenderWizard: {
         text: `The dragon is sleeping, but you struggle to empathize with such a beast. The walls are decorated in the bodies of his past foes, and his moat was drenched in the blood of his enemies. Killing him, you realized, would be a favor to humanity. You begin to hover over him, yet he wakes up before you can slash his throat. He attempts to strike your chest with a single claw, but Rodor shields you. While the dragon is distracted, your enchanted sword penetrates through his hand. He falls back, and while on the ground, you saw his head in half, separating his existence into two symmetrical halves. Finally, having accomplished your mission, you head back to the castle to meet the King. You possess a dragon's fang, and it is enough for the King to deem you as a dragonslayer. The public now reveres you, and the dragon has been slain—the end.`, 
-        options: [[]]
+        options: [[`The End`, `theEnd`]]
     }, 
     dragontailDefenderWitch: {
         text: `After conquering Whispering Wood your party finally made it into another town—the Dragontail—named for being near the dragon’s den. The Dragontail is a popular place for adventurers to hang out. Quest board, finding guilds to join, and taverns to celebrate your victories. After you gather supplies that will help you in the battle you have ahead of you, you decide that it is finally time… You head to the dragon’s den. It is a massive cave on the side of the mountain. The mountain is scorched with withered trees and skeletons of humans and animals. As you enter the cave, the snoring of the dragon causes a breeze of wind to hit you. Descending, you see Nidhogg the Eternal in slumber. He has tough, crystal-like, black scales, with multiple holes in his wings from the countless battles he has been in. You know this will be a hard fight.`, 
@@ -287,7 +286,7 @@ var story = {
     }, 
     joinDefender: {
         text:`With you and Rodor’s life on the line, you decide joining her will be the best option. You became an adventurer for the thrill of adventuring, not to become a hero. Vanessa motions to Nidhogg, and he lowers his body. You got on his neck, and the dragon began to take off. In the sky, you can see the world of Lusefell, and from this view, you realize that one day, this world will become your own.`, 
-        options: [[]]
+        options: [[`The End`, `theEnd`]]
     },
     refuseDefender: {
         text: `Yet your only goal is to seek adventure; there will be no more adventures if the world were to be destroyed. You refused her offer. Enraged, both Vanessa and the dragon began their attack. The battle starts with you and Rodor preparing for a counterattack.`, 
@@ -651,9 +650,13 @@ function fade() {
 function fadeOut() {
     document.getElementById('items').style.opacity = '0';
     document.getElementById('buttons').style.opacity = '0';
+    document.getElementById('title').style.opacity = '0';
     window.setTimeout(fadeIn, 000);
+    window.setTimeout(removeTitle, 1000);
 }
-
+function removeTitle() {
+    document.getElementById('title').innerHTML = ""
+}
 function fadeIn() {
     document.getElementById('items').style.opacity = '1';
     document.getElementById('buttons').style.opacity = '1';
@@ -693,15 +696,33 @@ function backgroundChange() {
     if (progress.includes("prologue")) {
         document.body.style.backgroundImage = "url('Images/castle.jpg')";
     }
-    if (progress.includes("tavern")) {
-        document.body.style.backgroundImage = "url('Images/tavern.jpg')";
+    if (progress.includes("tarven")) {
+        document.body.style.backgroundImage = "url('Images/tarven.jpg')";
     }
-    if (progress.includes("warlock")) {
+    if (progress.includes("warlockMage") || progress.includes("warlockDefender") || progress.includes("warlockHealer") || progress.includes("aloneWarlock")) {
         document.body.style.backgroundImage = "url('Images/whisperingWoods.jpg')";
     }
-    // if (progress.includes("towerMage") || progress.includes("towerHealer") || progress.includes("towerDefender")) {
-    //     document.body.style.backgroundImage = "url('Images/tower.jpg')";
-    // }
+    if (progress.includes("towerMage") || progress.includes("towerDefender") || progress.includes("towerHealer") || progress.includes("aloneWizard")) {
+        document.body.style.backgroundImage = "url('Images/tower.jpg')";
+    }
+    if (progress.includes("hutMage") || progress.includes("hutDefender") || progress.includes("hutHealer") || progress.includes("aloneWitch") || progress.includes("aloneWarlockWitch")) {
+        document.body.style.backgroundImage = "url('Images/hut.jpg')";
+    }
+    if (progress.includes("dragontailMageWizard") || progress.includes("dragontailHealerWizard") || progress.includes("dragontailDefenderWizard") || progress.includes("dragontailMageWitch") || progress.includes("dragontailHealerWitch") || progress.includes("dragontailDefenderWitch") || progress.includes("dragontailAloneWitchWarlock") || progress.includes("dragontailAloneWitch") || progress.includes("aloneWizardDragonTail")) {
+        document.body.style.backgroundImage = "url('Images/dragonTail.jpg')";
+    }
+    if (progress.includes("dragonFightMageWizard") || progress.includes("dragonFightDefenderWizard") || progress.includes("dragonFightHealerWizard") || progress.includes("aloneWizardDragon")) {
+        document.body.style.backgroundImage = "url('Images/dragon2.jpg')";
+    } 
+    if (progress.includes("theEnd")) {
+        document.body.style.backgroundImage = "url('Images/wooden_wall.jpg')";
+    }
+    if (progress.includes("betrayMage") || progress.includes("betrayDefender") || progress.includes("betrayHealer") || progress.includes("betrayAlone")) {
+        document.body.style.backgroundImage = "url('Images/witch2.jpg')";
+    }
+    if (progress.includes("joinMage") || progress.includes("joinDefender") || progress.includes("joinHealer") || progress.includes("joinAlone")) {
+        document.body.style.backgroundImage = "url('Images/dragonfly.jpg')";
+    }
 };
 
 
