@@ -58,3 +58,16 @@ button:hover {
     flex-direction: row;
     justify-content: space-around;
 }
+.credits, 
+a {
+    font-size: 20px;
+    color: rgb(159, 152, 152);
+    text-decoration: none;
+}
+.creditsbackground {
+    background-image: url("Images/wooden_wall.jpg");
+    font-size: 10px;
+}
+.names {
+    font-size: 30px;
+}

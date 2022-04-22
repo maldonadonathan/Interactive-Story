@@ -213,7 +213,7 @@ var story = {
 
     //DEFENDER Mentor
     warlockDefender: {
-        text: `You have just established your party and begun your journey into Whispering Woods's forest. The forest is relatively dense, and the only way forward was a narrow path. As you continue down the path ahead, you can see a humanoid figure blocking your path. As you approach closer, Azriel warns that it is a warlock, and he seems hostile.`, 
+        text: `You have just established your party and begun your journey into Whispering Woods's forest. The forest is relatively dense, and the only way forward was a narrow path. As you continue down the path ahead, you can see a humanoid figure blocking your path. As you approach closer, Defender warns that it is a warlock, and he seems hostile.`, 
         options: [[`Fight`, `fightDefender`], [`Run`, `runDefender`]]
     },
     fightDefender: {
@@ -350,7 +350,7 @@ var story = {
     },
     hermitMage: {
         text: ` The bandages seem to be doing a fine job keeping your partner alive, and from the corner of your eye, you notice a slight movement behind some piles of rock. A hermit emerges from the rock; he wears typical clothes with a brown cloak and a wooden walking stick. Old Man William was his name and approached the injured person. He waves his wooden stick, and the tip shines. In an instant, the wounds disappear, and Azriel is now in slumber. Thanking the older man, you began conversing with him about your journey.`, 
-        options: [[`Continue`, ``]]
+        options: [[`Continue`, `leaveMage`]]
     },
 
     //If fought Warlock
@@ -380,7 +380,7 @@ var story = {
     },
     rundeathMage: {
         text: `However, as you keep patching up the injuries, it keeps getting worse. Blood flies out as he coughs, and his temperature gradually increases. Slowly, a dark aura resides over him as the warlock curse starts to affect him. With only a few seconds left to live, he uttered, “Slay the dragon.” Tears flow as you become more determined to finish what you started.`, 
-        options: [[`Continue`, ``]]
+        options: [[`Continue`, `partnerDeath`]]
     },
 
         //Defender Path
@@ -410,7 +410,7 @@ var story = {
         },
         hermitDefender: {
             text: ` The bandages seem to be doing a fine job keeping your partner alive, and from the corner of your eye, you notice a slight movement behind some piles of rock. A hermit emerges from the rock; he wears typical clothes with a brown cloak and a wooden walking stick. Old Man William was his name and approached the injured person. He waves his wooden stick, and the tip shines. In an instant, the wounds disappear, and Rodor is now in slumber. Thanking the older man, you began conversing with him about your journey.`, 
-            options: [[`Continue`, ``]]
+            options: [[`Continue`, `enchantedTown`]]
         },
     
         //If fought Warlock
@@ -440,8 +440,31 @@ var story = {
         },
         rundeathDefender: {
             text: `However, as you keep patching up the injuries, it keeps getting worse. Blood flies out as he coughs, and his temperature gradually increases. Slowly, a dark aura resides over him as the warlock curse starts to affect him. With only a few seconds left to live, he uttered, “Slay the dragon.” Tears flow as you become more determined to finish what you started.`, 
-            options: [[`Continue`, ``]]
+            options: [[`Continue`, `partnerDeath`]]
         },
+
+        //Partner Death
+        partnerDeath: {
+            text: `After conquering The Hungry Peaks, you have finally made it into another town—the Dragontail—named for being near the dragon’s den. The Dragontail is a popular place for adventurers to hang out. Quest board, finding guilds to join, and taverns to celebrate your victories. After you gather supplies that will help you in the battle you have ahead of you, you decide that it is finally time… You head to the dragon’s den. It is a massive cave on the side of the mountain. The mountain is scorched, withered trees, and skeletons of both humans and animals. As you enter the cave, the snoring of the dragon causes a breeze of wind to hit you. Descending, you see Nidhogg the Eternal in slumber. He has tough, crystal-like, black scales, with multiple holes in his wings from the countless battles he has been in. You know this will be a hard fight.`, 
+            options: [[`Continue`, `deathDragon`]]
+        },
+        deathDragon: {
+            text:`As you approach the sleeping dragon, you look at him with rage. You quickly attack its head to end it in one blow, unsheathing your sword hopefully. Yet your anger made you miss the attack, and Nidhogg is now awake. He releases a roar, and you step back, preparing for another attack. He attacks with his claws, and you manage to fend off his attacks. There was a pause from the dragon when he put his arms down. You charged at him, stabbing through the body. You pull out your sword and stab him until the dragon lets out a roar that knocks you down. Nidhogg opens his wings as it seems like he is trying to take off, but you charge at him, grabbing on his feet. Taking off, you slowly climb up to the dragon and slowly onto his head. With a deep breath, you stab through the dragon’s driving the dragon into the ground. Your rage when you first encountered the dragon is now gone, yet you felt rather sad, for that it was only you who saw the dragon’s death. Returning to the Kingdom of Athene, you are significantly rewarded for your deeds, yet the reward does not cope with the sadness that you are feeling. The quest is done…but at a cost.`, 
+            options: [['The End', 'theEnd']]
+        },
+
+        //Enchanted Sword
+        enchantedTown: {
+            text: `After conquering The Hungry Peaks, your party finally made it into another town—the Dragontail—named for being near the dragon’s den. The Dragontail is a popular place for adventurers to hang out. Quest board, finding guilds to join, and taverns to celebrate your victories. After you gather supplies that will help you in the battle you have ahead of you, you decide that it is finally time… You head to the dragon’s den. It is a massive cave on the side of the mountain. The mountain is scorched with withered trees and skeletons of humans and animals. As you enter the cave, the snoring of the dragon causes a breeze of wind to hit you. Descending, you see Nidhogg the Eternal in slumber. He has tough, crystal-like, black scales, with multiple holes in his wings from the countless battles he has been in. You know this will be a hard fight.`, 
+            options: [[`Continue`, `enchantedDragon`]]
+        }, 
+        enchantedDragon: {
+            text: `The dragon is sleeping, but you struggle to empathize with such a beast. The walls are decorated in the bodies of his past foes, and his moat was drenched in the blood of his enemies. Killing him, you realized, would be a favor to humanity. You begin to hover over him, yet he wakes up before you can slash his throat. He attempts to strike your chest with a single claw, but Rodor shields you. While the dragon is distracted, your enchanted sword penetrates through his hand. He falls back, and while on the ground, you saw his head in half, separating his existence into two symmetrical halves. Finally, having accomplished your mission, you head back to the castle to meet the King. You possess a dragon's fang, and it is enough for the King to deem you as a dragonslayer. The public now reveres you, and the dragon has been slain—the end.`, 
+            options: [[`The End`, `theEnd`]]
+        },
+
+
+
 
         // Alone Completely
         aloneWarlock: {
@@ -722,6 +745,27 @@ function backgroundChange() {
     }
     if (progress.includes("joinMage") || progress.includes("joinDefender") || progress.includes("joinHealer") || progress.includes("joinAlone")) {
         document.body.style.backgroundImage = "url('Images/dragonfly.jpg')";
+    }
+    if (progress.includes("differentMage") || progress.includes("differentDefender") || progress.includes("differentHealer")) {
+        document.body.style.backgroundImage = "url('Images/hungrypeaks.jpg')";
+    }
+    if (progress.includes("climbMage") || progress.includes("climbDefender") || progress.includes("climbHealer")) {
+        document.body.style.backgroundImage = "url('Images/golem.jpg')";
+    }
+    if (progress.includes("hermitMage") || progress.includes("hermitDefender")) {
+        document.body.style.backgroundImage = "url('Images/hermit.png')";
+    }
+    if (progress.includes("alonePath")) {
+        document.body.style.backgroundImage = "url('Images/cave.jpg')";
+    }
+    if (progress.includes("enter")) {
+        document.body.style.backgroundImage = "url('Images/minotaur.jpg')";
+    }
+    if (progress.includes("kill")) {
+        document.body.style.backgroundImage = "url('Images/dragon2.jpg')";
+    }
+    if (progress.includes("tame")) {
+        document.body.style.backgroundImage = "url('Images/dragonfighting.jpg')";
     }
 };
 
