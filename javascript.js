@@ -674,7 +674,7 @@ function fadeOut() {
     document.getElementById('items').style.opacity = '0';
     document.getElementById('buttons').style.opacity = '0';
     document.getElementById('title').style.opacity = '0';
-    window.setTimeout(fadeIn, 000);
+    window.setTimeout(fadeIn, 1000);
     window.setTimeout(removeTitle, 1000);
 }
 function removeTitle() {
