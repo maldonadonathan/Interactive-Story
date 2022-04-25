@@ -368,7 +368,7 @@ var story = {
     },
     runcarryMage: {
         text:`While carrying your partner down the mountain, you come across a giant golem. Your stealth is no match for his wit, and he swiftly approaches you. Because your partner is incapacitated, you have to fight alone. You strategically deal damage without getting hit with your swift movements against a slow target. With the last blow through the shiny blue core of the golem, it disassembles. You did it… you killed the giant golem. As the previous rock drops to the ground, you see a sword stuck to the rock. It seems like the adventurer who tried to kill the golem failed. Pulling out the sword and inspecting it, the sword looks legendary. The craftsmanship is incredible, and you decide the blade can be helpful too. You sheath the sword around your waist.`, 
-        options: [[`Continue`, `leaveMage`]]
+        options: [[`Continue`, `runleaveMage`]]
     }, 
     runleaveMage: {
         text:`After conquering The Hungry Peaks, your party finally made it into another town—the Dragontail—named for being near the dragon’s den. The Dragontail is a popular place for adventurers to hang out. Quest board, finding guilds to join, and taverns to celebrate your victories. After you gather supplies that will help you in the battle you have ahead of you, you decide that it is finally time… You head to the dragon’s den. It is a massive cave on the side of the mountain. The mountain is scorched with withered trees and skeletons of humans and animals. As you enter the cave, the snoring of the dragon causes a breeze of wind to hit you. Descending, you see Nidhogg the Eternal in slumber. He has tough, crystal-like, black scales, with multiple holes in his wings from the countless battles he has been in. You know this will be a hard fight.`, 
@@ -428,7 +428,7 @@ var story = {
         },
         runcarryDefender: {
             text:`While carrying your partner down the mountain, you come across a giant golem. Your stealth is no match for his wit, and he swiftly approaches you. Because your partner is incapacitated, you have to fight alone. You strategically deal damage without getting hit with your swift movements against a slow target. With the last blow through the shiny blue core of the golem, it disassembles. You did it… you killed the giant golem. As the previous rock drops to the ground, you see a sword stuck to the rock. It seems like the adventurer who tried to kill the golem failed. Pulling out the sword and inspecting it, the sword looks legendary. The craftsmanship is incredible, and you decide the blade can be helpful too. You sheath the sword around your waist.`, 
-            options: [[`Continue`, `leaveDefender`]]
+            options: [[`Continue`, `runleaveDefender`]]
         }, 
         runleaveDefender: {
             text:`After conquering The Hungry Peaks, your party finally made it into another town—the Dragontail—named for being near the dragon’s den. The Dragontail is a popular place for adventurers to hang out. Quest board, finding guilds to join, and taverns to celebrate your victories. After you gather supplies that will help you in the battle you have ahead of you, you decide that it is finally time… You head to the dragon’s den. It is a massive cave on the side of the mountain. The mountain is scorched with withered trees and skeletons of humans and animals. As you enter the cave, the snoring of the dragon causes a breeze of wind to hit you. Descending, you see Nidhogg the Eternal in slumber. He has tough, crystal-like, black scales, with multiple holes in his wings from the countless battles he has been in. You know this will be a hard fight.`, 
@@ -662,7 +662,7 @@ function removeItems() {
 }
 
 function start() {
-    window.setTimeout(removeItems, 000);
+    window.setTimeout(removeItems, 500);
     fade();
 }
 
@@ -674,8 +674,8 @@ function fadeOut() {
     document.getElementById('items').style.opacity = '0';
     document.getElementById('buttons').style.opacity = '0';
     document.getElementById('title').style.opacity = '0';
-    window.setTimeout(fadeIn, 1000);
-    window.setTimeout(removeTitle, 1000);
+    window.setTimeout(fadeIn, 500);
+    window.setTimeout(removeTitle, 500);
 }
 function removeTitle() {
     document.getElementById('title').innerHTML = ""
@@ -713,11 +713,35 @@ function changeStory() {
     }
 
 }
-document.body.style.backgroundImage = "url('Images/wooden_wall.jpg')";
+
+function preloadImage(url) {
+    var img=new Image();
+    img.src=url;
+}
+
+// preloadImage('Images/castle.jpg');
+// preloadImage('Images/tarven.jpg');
+// preloadImage('Images/cave.jpg');
+// preloadImage('Images/dragon.jpg');
+// preloadImage('Images/dragonfighting.jpg');
+// preloadImage('Images/dragonfly.jpg');
+// preloadImage('Images/dragonTail.jpg');
+// preloadImage('Images/golem.jpg');
+// preloadImage('Images/hermit.png');
+// preloadImage('Images/hungryPeaks.jpg');
+// preloadImage('Images/hut.jpg');
+// preloadImage('Images/minotaur.jpg');
+// preloadImage('Images/witch.jpg');
+// preloadImage('Images/whisperingWoods.jpg');
+// preloadImage('Images/tower.jpg');
+
+
+document.body.style.backgroundImage = "url('Images/hungrypeaks2.jpg')"
 
 function backgroundChange() {
+
     if (progress.includes("prologue")) {
-        document.body.style.backgroundImage = "url('Images/castle.jpg')";
+        document.body.style.backgroundImage = "url('Images/castle.jpg')"
     }
     if (progress.includes("tarven")) {
         document.body.style.backgroundImage = "url('Images/tarven.jpg')";
@@ -731,17 +755,17 @@ function backgroundChange() {
     if (progress.includes("hutMage") || progress.includes("hutDefender") || progress.includes("hutHealer") || progress.includes("aloneWitch") || progress.includes("aloneWarlockWitch")) {
         document.body.style.backgroundImage = "url('Images/hut.jpg')";
     }
-    if (progress.includes("dragontailMageWizard") || progress.includes("dragontailHealerWizard") || progress.includes("dragontailDefenderWizard") || progress.includes("dragontailMageWitch") || progress.includes("dragontailHealerWitch") || progress.includes("dragontailDefenderWitch") || progress.includes("dragontailAloneWitchWarlock") || progress.includes("dragontailAloneWitch") || progress.includes("aloneWizardDragonTail")) {
+    if (progress.includes("dragontailMageWizard") || progress.includes("dragontailHealerWizard") || progress.includes("dragontailDefenderWizard") || progress.includes("dragontailMageWitch") || progress.includes("dragontailHealerWitch") || progress.includes("dragontailDefenderWitch") || progress.includes("dragontailAloneWitchWarlock") || progress.includes("dragontailAloneWitch") || progress.includes("aloneWizardDragonTail") || progress.includes("peaksHealer") || progress.includes("leaveDefender") || progress.includes("leaveMage") || progress.includes("runleaveDefender") || progress.includes("runleaveMage")) {
         document.body.style.backgroundImage = "url('Images/dragonTail.jpg')";
     }
     if (progress.includes("dragonFightMageWizard") || progress.includes("dragonFightDefenderWizard") || progress.includes("dragonFightHealerWizard") || progress.includes("aloneWizardDragon")) {
-        document.body.style.backgroundImage = "url('Images/dragon2.jpg')";
+        document.body.style.backgroundImage = "url('Images/dragon.jpg')";
     } 
     if (progress.includes("theEnd")) {
         document.body.style.backgroundImage = "url('Images/wooden_wall.jpg')";
     }
     if (progress.includes("betrayMage") || progress.includes("betrayDefender") || progress.includes("betrayHealer") || progress.includes("betrayAlone")) {
-        document.body.style.backgroundImage = "url('Images/witch2.jpg')";
+        document.body.style.backgroundImage = "url('Images/witch.jpg')";
     }
     if (progress.includes("joinMage") || progress.includes("joinDefender") || progress.includes("joinHealer") || progress.includes("joinAlone")) {
         document.body.style.backgroundImage = "url('Images/dragonfly.jpg')";
@@ -768,5 +792,4 @@ function backgroundChange() {
         document.body.style.backgroundImage = "url('Images/dragonfighting.jpg')";
     }
 };
-
 
