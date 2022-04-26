@@ -719,24 +719,24 @@ function preloadImage(url) {
     img.src=url;
 }
 
-// preloadImage('Images/castle.jpg');
-// preloadImage('Images/tarven.jpg');
-// preloadImage('Images/cave.jpg');
-// preloadImage('Images/dragon.jpg');
-// preloadImage('Images/dragonfighting.jpg');
-// preloadImage('Images/dragonfly.jpg');
-// preloadImage('Images/dragonTail.jpg');
-// preloadImage('Images/golem.jpg');
-// preloadImage('Images/hermit.png');
-// preloadImage('Images/hungryPeaks.jpg');
-// preloadImage('Images/hut.jpg');
-// preloadImage('Images/minotaur.jpg');
-// preloadImage('Images/witch.jpg');
-// preloadImage('Images/whisperingWoods.jpg');
-// preloadImage('Images/tower.jpg');
+preloadImage('Images/castle.jpg');
+preloadImage('Images/tarven.jpg');
+preloadImage('Images/cave.jpg');
+preloadImage('Images/dragon.jpg');
+preloadImage('Images/dragonfighting.jpg');
+preloadImage('Images/dragonfly.jpg');
+preloadImage('Images/dragonTail.jpg');
+preloadImage('Images/golem.jpg');
+preloadImage('Images/hermit.png');
+preloadImage('Images/hungryPeaks.jpg');
+preloadImage('Images/hut.jpg');
+preloadImage('Images/minotaur.jpg');
+preloadImage('Images/witch.jpg');
+preloadImage('Images/whisperingWoods.jpg');
+preloadImage('Images/tower.jpg');
 
 
-document.body.style.backgroundImage = "url('Images/hungrypeaks2.jpg')"
+document.body.style.backgroundImage = "url('Images/wooden_wall.jpg')"
 
 function backgroundChange() {
 
@@ -755,11 +755,11 @@ function backgroundChange() {
     if (progress.includes("hutMage") || progress.includes("hutDefender") || progress.includes("hutHealer") || progress.includes("aloneWitch") || progress.includes("aloneWarlockWitch")) {
         document.body.style.backgroundImage = "url('Images/hut.jpg')";
     }
-    if (progress.includes("dragontailMageWizard") || progress.includes("dragontailHealerWizard") || progress.includes("dragontailDefenderWizard") || progress.includes("dragontailMageWitch") || progress.includes("dragontailHealerWitch") || progress.includes("dragontailDefenderWitch") || progress.includes("dragontailAloneWitchWarlock") || progress.includes("dragontailAloneWitch") || progress.includes("aloneWizardDragonTail") || progress.includes("peaksHealer") || progress.includes("leaveDefender") || progress.includes("leaveMage") || progress.includes("runleaveDefender") || progress.includes("runleaveMage")) {
+    if (progress.includes("partnerDeath") || progress.includes("dragontailMageWizard") || progress.includes("dragontailHealerWizard") || progress.includes("dragontailDefenderWizard") || progress.includes("dragontailMageWitch") || progress.includes("dragontailHealerWitch") || progress.includes("dragontailDefenderWitch") || progress.includes("dragontailAloneWitchWarlock") || progress.includes("dragontailAloneWitch") || progress.includes("aloneWizardDragonTail") || progress.includes("peaksHealer") || progress.includes("leaveDefender") || progress.includes("leaveMage") || progress.includes("runleaveDefender") || progress.includes("runleaveMage")) {
         document.body.style.backgroundImage = "url('Images/dragonTail.jpg')";
     }
     if (progress.includes("dragonFightMageWizard") || progress.includes("dragonFightDefenderWizard") || progress.includes("dragonFightHealerWizard") || progress.includes("aloneWizardDragon")) {
-        document.body.style.backgroundImage = "url('Images/dragon.jpg')";
+        document.body.style.backgroundImage = "url('Images/dragon2.jpg')";
     } 
     if (progress.includes("theEnd")) {
         document.body.style.backgroundImage = "url('Images/wooden_wall.jpg')";
@@ -777,7 +777,7 @@ function backgroundChange() {
         document.body.style.backgroundImage = "url('Images/golem.jpg')";
     }
     if (progress.includes("hermitMage") || progress.includes("hermitDefender")) {
-        document.body.style.backgroundImage = "url('Images/hermit.png')";
+        document.body.style.backgroundImage = "url('Images/hermit.jpg')";
     }
     if (progress.includes("alonePath")) {
         document.body.style.backgroundImage = "url('Images/cave.jpg')";
@@ -786,7 +786,7 @@ function backgroundChange() {
         document.body.style.backgroundImage = "url('Images/minotaur.jpg')";
     }
     if (progress.includes("kill")) {
-        document.body.style.backgroundImage = "url('Images/dragon2.jpg')";
+        document.body.style.backgroundImage = "url('Images/dragon.jpg')";
     }
     if (progress.includes("tame")) {
         document.body.style.backgroundImage = "url('Images/dragonfighting.jpg')";
