@@ -71,3 +71,26 @@ a {
 .names {
     font-size: 30px;
 }
+
+
+@media screen and (max-width: 480px){
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 25px;
+    }
+    .credits {
+        font-size: 10px;
+    }
+    button {
+        font-size: 10px;
+    }
+    html {
+        font-size: 35px;
+    }
+    body {
+        background-repeat: no-repeat;
+        height: 100vh
+    }
+}
