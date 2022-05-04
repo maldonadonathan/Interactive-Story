@@ -548,7 +548,7 @@ var story = {
         }, 
         joinAlone: {
             text:`With your life on the line, you decide joining her will be the best option. You became an adventurer for the thrill of adventuring, not to become a hero. Vanessa motions to Nidhogg, and he lowers his body. You got on his neck, and the dragon began to take off. In the sky, you can see the world of Lusefell, and from this view, you realize that one day, this world will become your own.`, 
-            options: [[]]
+            options: [["The End", "theEnd"]]
         },
         refuseAlone: {
             text: `Yet your only goal is to seek adventure; there will be no more adventures if the world is destroyed. You rejected her offer. Enraged, both Vanessa and the dragon began their attack. You prepare for a counterattack by unsheathing your sword... the battle begins.`, 
@@ -741,40 +741,40 @@ document.body.style.backgroundImage = "url('Images/wooden_wall.jpg')"
 function backgroundChange() {
 
     if (progress.includes("prologue")) {
-        document.body.style.backgroundImage = "url('Images/castle.jpg')"
+        document.body.style.backgroundImage = "url('imageblur/castle.jpg')"
     }
     if (progress.includes("tarven")) {
-        document.body.style.backgroundImage = "url('Images/tarven.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/tarven.jpg')";
     }
     if (progress.includes("warlockMage") || progress.includes("warlockDefender") || progress.includes("warlockHealer") || progress.includes("aloneWarlock")) {
-        document.body.style.backgroundImage = "url('Images/whisperingWoods.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/whisperingWoods.jpg')";
     }
     if (progress.includes("towerMage") || progress.includes("towerDefender") || progress.includes("towerHealer") || progress.includes("aloneWizard")) {
-        document.body.style.backgroundImage = "url('Images/tower.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/tower.jpg')";
     }
     if (progress.includes("hutMage") || progress.includes("hutDefender") || progress.includes("hutHealer") || progress.includes("aloneWitch") || progress.includes("aloneWarlockWitch")) {
-        document.body.style.backgroundImage = "url('Images/hut.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/hut.jpg')";
     }
     if (progress.includes("partnerDeath") || progress.includes("dragontailMageWizard") || progress.includes("dragontailHealerWizard") || progress.includes("dragontailDefenderWizard") || progress.includes("dragontailMageWitch") || progress.includes("dragontailHealerWitch") || progress.includes("dragontailDefenderWitch") || progress.includes("dragontailAloneWitchWarlock") || progress.includes("dragontailAloneWitch") || progress.includes("aloneWizardDragonTail") || progress.includes("peaksHealer") || progress.includes("leaveDefender") || progress.includes("leaveMage") || progress.includes("runleaveDefender") || progress.includes("runleaveMage")) {
-        document.body.style.backgroundImage = "url('Images/dragonTail.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/dragonTail.jpg')";
     }
     if (progress.includes("dragonFightMageWizard") || progress.includes("dragonFightDefenderWizard") || progress.includes("dragonFightHealerWizard") || progress.includes("aloneWizardDragon")) {
-        document.body.style.backgroundImage = "url('Images/dragon2.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/dragon2.jpg')";
     } 
     if (progress.includes("theEnd")) {
-        document.body.style.backgroundImage = "url('Images/wooden_wall.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/wooden_wall.jpg')";
     }
     if (progress.includes("betrayMage") || progress.includes("betrayDefender") || progress.includes("betrayHealer") || progress.includes("betrayAlone")) {
-        document.body.style.backgroundImage = "url('Images/witch.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/witch.jpg')";
     }
     if (progress.includes("joinMage") || progress.includes("joinDefender") || progress.includes("joinHealer") || progress.includes("joinAlone")) {
-        document.body.style.backgroundImage = "url('Images/dragonfly.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/dragonfly.jpg')";
     }
     if (progress.includes("differentMage") || progress.includes("differentDefender") || progress.includes("differentHealer")) {
-        document.body.style.backgroundImage = "url('Images/hungrypeaks.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/hungrypeaks.jpg')";
     }
     if (progress.includes("climbMage") || progress.includes("climbDefender") || progress.includes("climbHealer")) {
-        document.body.style.backgroundImage = "url('Images/golem.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/golem.jpg')";
     }
     if (progress.includes("hermitMage") || progress.includes("hermitDefender")) {
         document.body.style.backgroundImage = "url('Images/hermit.jpg')";

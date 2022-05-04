@@ -1,5 +1,5 @@
 html {
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     font-family: 'MedievalSharp', cursive;
     color: rgb(255, 255, 255);
@@ -29,10 +29,10 @@ p {
 }
 
 button {
-    width: 19vw;
-    height: 6vw;
+    width: 13vw;
+    height: 4vw;
     margin-top: 10vw;
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'MedievalSharp', cursive;
     border: none;
     color: white;
