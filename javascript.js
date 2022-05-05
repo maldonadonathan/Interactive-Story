@@ -1,3 +1,4 @@
+document.body.style.backgroundImage = "url('imageblur/wooden_wall.jpg')"
 var story = {
 
     prologue: {
@@ -213,7 +214,7 @@ var story = {
 
     //DEFENDER Mentor
     warlockDefender: {
-        text: `You have just established your party and begun your journey into Whispering Woods's forest. The forest is relatively dense, and the only way forward was a narrow path. As you continue down the path ahead, you can see a humanoid figure blocking your path. As you approach closer, Defender warns that it is a warlock, and he seems hostile.`, 
+        text: `You have just established your party and begun your journey into Whispering Woods's forest. The forest is relatively dense, and the only way forward was a narrow path. As you continue down the path ahead, you can see a humanoid figure blocking your path. As you approach closer, Rodor warns that it is a warlock, and he seems hostile.`, 
         options: [[`Fight`, `fightDefender`], [`Run`, `runDefender`]]
     },
     fightDefender: {
@@ -295,7 +296,7 @@ var story = {
     firstDefender: {
         text: `You told Rodor to fend off attacks from the witch while you attack Nidhogg. The dragon attacks with a breath of fire. You could avoid it with your fast agility, and you started running up to him. Getting closer to the dragon, you attack with powerful blows on his body and arms. The dragon let out a huge roar, and quickly, you climbed on top of the dragon. Desperately trying to shake you off, you stab your sword into the dragon to use as support. Slowly, you get to the dragon’s head, and your sword pierces through the dragon’s head with one last attack. The witch remains defenseless and tired because of your Rodor’s attack. With one attack, you slay the witch as well. Finally, having accomplished your mission, you head back to the castle to meet the King. You possess a dragon's fang, and it is enough for the King to deem you and Rodor as a dragonslayer. Also, with the head of the witch, you are rewarded extra for the accomplishment. The public now reveres you, and the dragon has been slain—the end.`, 
         options: [
-            [[`The End`, `theEnd`]]
+            [`The End`, `theEnd`]
         ]
     },
     witchDefender: {
@@ -480,11 +481,11 @@ var story = {
             options:  [[`Continue`, `aloneWarlockChoice`]]
         }, 
         runAlone: {
-            text: `You decide that the warlock is too powerful for you at your current level, and you flee, leaving unscathed, only by a hair.`, 
+            text: `You decide that the warlock is too powerful for you at your current level.`, 
             options:  [[`Continue`, `aloneChoice`]]
         }, 
         aloneChoice: {
-            text: `Having just escaped death, you ponder how to proceed through this quest. While you are adamant about continuing down the path you have already started, your instincts tell you to search for a mentor.`, 
+            text: `You ponder how to proceed through this quest. While you are adamant about continuing down the path you have already started, your instincts tell you to search for a mentor.`, 
             options: [[`Mentor`, `aloneMentor`], [`Different Path`, `alonePath`]]
         },
         aloneMentor: {
@@ -496,7 +497,7 @@ var story = {
             options: [[`Wizard`, `aloneWizard`], [`Witch`, `aloneWitch`]]
         },
         aloneWizard: {
-            text: `You decide the wizard tower is more trustworthy than the ominous hut. When you approach the tower’s door, a voice speaks into your head. Telepathically, the wizard tells you to enter. As you enter the building, you are greeted with a magical aura. A spiraling staircase leads to the top of the tower, and the wizard is slowly descending from the stairs. Sinclair the Great was his name. You ask to be an apprentice for Sinclair, and he accepts. Before your training begins, Sinclair casts Remove Curse. The curse that was placed upon you by the warlock is now removed.`,
+            text: `You decide the wizard tower is more trustworthy than the ominous hut. When you approach the tower’s door, a voice speaks into your head. Telepathically, the wizard tells you to enter. As you enter the building, you are greeted with a magical aura. A spiraling staircase leads to the top of the tower, and the wizard is slowly descending from the stairs. Sinclair the Great was his name. You ask to be an apprentice for Sinclair, and he accepts.`,
             options: [[`Continue`, `wizardAloneCont`]]
         },
         aloneWitch: {
@@ -574,7 +575,11 @@ var story = {
         },
         continueAloneMentorWarlock: {
             text: `As you enter the town, the presence of a great tower instantly attracts your attention. You immediately realize that the wizard lives there. As you approach the building, you see a small hut outside of town in the distance.`,
-            options: [[`Wizard`, `aloneWizard`], [`Witch`, `aloneWarlockWitch`]]
+            options: [[`Wizard`, `aloneWarlockWizard`], [`Witch`, `aloneWarlockWitch`]]
+        },
+        aloneWarlockWizard: {
+            text: `You decide the wizard tower is more trustworthy than the ominous hut. When you approach the tower’s door, a voice speaks into your head. Telepathically, the wizard tells you to enter. As you enter the building, you are greeted with a magical aura. A spiraling staircase leads to the top of the tower, and the wizard is slowly descending from the stairs. Sinclair the Great was his name. You ask to be an apprentice for Sinclair, and he accepts. Before your training begins, Sinclair casts Remove Curse. The curse that was placed upon you by the warlock is now removed.`, 
+            options: [[`Continue`, `wizardAloneCont`]]
         },
         aloneWarlockWitch: {
             text: `The wizard tower seems more trustworthy, but you are more willing to gain greater power by any means possible. You proceed to the hut. You are greeted by Vanessa Vonner, the witch that rivals the wizard. Upon hearing your request, she accepts it in an instant.`,
@@ -589,7 +594,7 @@ var story = {
             options: [[`Continue`, `warlockFoughtAloneWitchFight`]]
         },
         warlockFoughtAloneWitchFight: {
-            text: `With the witch's presence, you felt no sense of bloodlust coming from the warlock. If anything, he seems almost friendly. It appears as if she killed the warlock to gain your trust. The witch motions to the warlock, and with the speed of lightning, he is launched into the sky, falling to meet his tragic demise eventually.`,
+            text: `With the witch's presence, you felt no sense of bloodlust coming from the warlock. If anything, he seems almost friendly. The witch motions to the warlock, and with the speed of lightning, he is launched into the sky, falling to meet his tragic demise eventually. It appears as if she killed the warlock to gain your trust.`,
             options: [[`Continue`, `dragontailAloneWitchWarlock`]]
         },    
         dragontailAloneWitchWarlock: {
@@ -605,7 +610,7 @@ var story = {
             options:[[`Continue`, `cursed`]]
         },
         cursed: {
-            text: `You feel yourself becoming fainter and fainter as you attempt to strike her. She begins to send you flying across the dungeon and levitates you just above the mouth of the dragon… You think back to why this is happening. Of course! The curse you never addressed! While she is teasing you, the dragon decides now is the time to feast. He chases after you, becoming increasingly angry. After what felt like an eternity, the witch gives you a break. However, she decides, instead, to cut away at your skin, almost as if she were unwrapping you. She bathes you in these spices with salt in her right hand and peppers in her left. You plead for help, begging for any release of pain and suffering. Suddenly, you feel a force within your chest. The pain increasingly grows, but you know an end is soon coming, so you accept it. You slowly begin to turn to dust, and you soon no longer exist. You fade away. Quest failed. The End.`, 
+            text: `You feel yourself becoming fainter and fainter as you attempt to strike her. She begins to send you flying across the dungeon and levitates you just above the mouth of the dragon… You think back to why this is happening. Of course! The curse you never addressed! While she is teasing you, the dragon decides now is the time to feast. He chases after you, becoming increasingly angry. After what felt like an eternity, the witch gives you a break. However, she decides, instead, to cut away at your skin, almost as if she were unwrapping you. She bathes you in these spices with salt in her right hand and peppers in her left. You plead for help, begging for any release of pain and suffering. Suddenly, you feel a force within your chest. The pain increasingly grows, but you know an end is soon coming, so you accept it. You slowly begin to turn to dust, and you soon no longer exist. You fade away.`, 
             options: [[`The End`, `theEnd`]]
         },
 
@@ -635,7 +640,7 @@ var story = {
             options: [[`Continue`, `expose`]]
         },
         expose: {
-            text: `You decided that the people of Athena must know how the King has lied to them all and how the royal family is to blame for the chaos in this world. They choose to trust their King, brainwashed by his lies and charisma. You are now scheduled to be hung later that night for treason. However, the dragon you befriended and tamed appears above the crowd at the very last moment. He kills the royal family and reveals his truth. Finally convinced, the people of Athena worship you and deem you the new King of Athena. The end.`, 
+            text: `You decided that the people of Athena must know how the King has lied to them all and how the royal family is to blame for the chaos in this world. They choose to trust their King, brainwashed by his lies and charisma. You are now scheduled to be hung later that night for treason. However, the dragon you befriended and tamed appears above the crowd at the very last moment. He kills the royal family and reveals his truth. Finally convinced, the people of Athena worship you and deem you the new King of Athena.`, 
             options: [[`The End`, `theEnd`]]
         }, 
         noEnter: {
@@ -662,7 +667,7 @@ function removeItems() {
 }
 
 function start() {
-    window.setTimeout(removeItems, 500);
+    window.setTimeout(removeItems, 00);
     fade();
 }
 
@@ -674,8 +679,8 @@ function fadeOut() {
     document.getElementById('items').style.opacity = '0';
     document.getElementById('buttons').style.opacity = '0';
     document.getElementById('title').style.opacity = '0';
-    window.setTimeout(fadeIn, 500);
-    window.setTimeout(removeTitle, 500);
+    window.setTimeout(fadeIn, 00);
+    window.setTimeout(removeTitle, 00);
 }
 function removeTitle() {
     document.getElementById('title').innerHTML = ""
@@ -719,24 +724,24 @@ function preloadImage(url) {
     img.src=url;
 }
 
-preloadImage('Images/castle.jpg');
-preloadImage('Images/tarven.jpg');
-preloadImage('Images/cave.jpg');
-preloadImage('Images/dragon.jpg');
-preloadImage('Images/dragonfighting.jpg');
-preloadImage('Images/dragonfly.jpg');
-preloadImage('Images/dragonTail.jpg');
-preloadImage('Images/golem.jpg');
-preloadImage('Images/hermit.png');
-preloadImage('Images/hungryPeaks.jpg');
-preloadImage('Images/hut.jpg');
-preloadImage('Images/minotaur.jpg');
-preloadImage('Images/witch.jpg');
-preloadImage('Images/whisperingWoods.jpg');
-preloadImage('Images/tower.jpg');
+
+preloadImage('imageblur/castle.jpg');
+preloadImage('imageblur/tarven.jpg');
+preloadImage('imageblur/cave.jpg');
+preloadImage('imageblur/dragon.jpg');
+preloadImage('imageblur/dragonfighting.jpg');
+preloadImage('imageblur/dragonfly.jpg');
+preloadImage('imageblur/dragonTail.jpg');
+preloadImage('imageblur/golem.jpg');
+preloadImage('imageblur/hermit.jpg');
+preloadImage('imageblur/hungryPeaks.jpg');
+preloadImage('imageblur/hut.jpg');
+preloadImage('imageblur/minotaur.jpg');
+preloadImage('imageblur/witch.jpg');
+preloadImage('imageblur/whisperingWoods.jpg');
+preloadImage('imageblur/tower.jpg');
 
 
-document.body.style.backgroundImage = "url('Images/wooden_wall.jpg')"
 
 function backgroundChange() {
 
@@ -749,47 +754,47 @@ function backgroundChange() {
     if (progress.includes("warlockMage") || progress.includes("warlockDefender") || progress.includes("warlockHealer") || progress.includes("aloneWarlock")) {
         document.body.style.backgroundImage = "url('imageblur/whisperingWoods.jpg')";
     }
-    if (progress.includes("towerMage") || progress.includes("towerDefender") || progress.includes("towerHealer") || progress.includes("aloneWizard")) {
+    if (progress.includes("towerMage") || progress.includes("towerDefender") || progress.includes("towerHealer") || progress.includes("aloneWizard") ||progress.includes("aloneWarlockWizard")) {
         document.body.style.backgroundImage = "url('imageblur/tower.jpg')";
     }
     if (progress.includes("hutMage") || progress.includes("hutDefender") || progress.includes("hutHealer") || progress.includes("aloneWitch") || progress.includes("aloneWarlockWitch")) {
         document.body.style.backgroundImage = "url('imageblur/hut.jpg')";
     }
-    if (progress.includes("partnerDeath") || progress.includes("dragontailMageWizard") || progress.includes("dragontailHealerWizard") || progress.includes("dragontailDefenderWizard") || progress.includes("dragontailMageWitch") || progress.includes("dragontailHealerWitch") || progress.includes("dragontailDefenderWitch") || progress.includes("dragontailAloneWitchWarlock") || progress.includes("dragontailAloneWitch") || progress.includes("aloneWizardDragonTail") || progress.includes("peaksHealer") || progress.includes("leaveDefender") || progress.includes("leaveMage") || progress.includes("runleaveDefender") || progress.includes("runleaveMage")) {
+    if (progress.includes("differentMage") || progress.includes("differentDefender") || progress.includes("differentHealer") || progress.includes("rundifferentMage") || progress.includes("rundifferentDefender") || progress.includes("rundifferentHealer")) {
+        document.body.style.backgroundImage = "url('imageblur/hungrypeaks.jpg')";
+    }
+    if (progress.includes("climbMage") || progress.includes("climbDefender") || progress.includes("climbHealer") || progress.includes("runClimbMage") || progress.includes("runClimbDefender")) {
+        document.body.style.backgroundImage = "url('imageblur/golem.jpg')";
+    }
+    if (progress.includes("hermitMage") || progress.includes("hermitDefender")) {
+        document.body.style.backgroundImage = "url('imageblur/hermit.jpg')";
+    }
+    if (progress.includes("partnerDeath") || progress.includes("dragontailMageWizard") || progress.includes("dragontailHealerWizard") || progress.includes("dragontailDefenderWizard") || progress.includes("dragontailMageWitch") || progress.includes("dragontailHealerWitch") | progress.includes("dragontailDefenderWitch") || progress.includes("dragontailAloneWitchWarlock") || progress.includes("dragontailAloneWitch") || progress.includes("runleaveMage") || progress.includes("runleaveDefender") || progress.includes("aloneWizardDragonTail") || progress.includes("peaksHealer") || progress.includes("leaveDefender") || progress.includes("leaveMage") || progress.includes("runleaveDefender") || progress.includes("runleaveMage")) {
         document.body.style.backgroundImage = "url('imageblur/dragonTail.jpg')";
     }
-    if (progress.includes("dragonFightMageWizard") || progress.includes("dragonFightDefenderWizard") || progress.includes("dragonFightHealerWizard") || progress.includes("aloneWizardDragon")) {
-        document.body.style.backgroundImage = "url('imageblur/dragon2.jpg')";
+    if (progress.includes("dragonFightMageWizard") || progress.includes("dragonFightDefenderWizard") || progress.includes("dragonFightHealerWizard") || progress.includes("aloneWizardDragon") || progress.includes("deathDragon")) {
+        document.body.style.backgroundImage = "url('imageblur/dragon.jpg')";
     } 
     if (progress.includes("theEnd")) {
         document.body.style.backgroundImage = "url('imageblur/wooden_wall.jpg')";
     }
-    if (progress.includes("betrayMage") || progress.includes("betrayDefender") || progress.includes("betrayHealer") || progress.includes("betrayAlone")) {
+    if (progress.includes("betrayMage") || progress.includes("betrayDefender") || progress.includes("betrayHealer") || progress.includes("betrayAlone") || progress.includes("betrayAloneWarlock")) {
         document.body.style.backgroundImage = "url('imageblur/witch.jpg')";
     }
     if (progress.includes("joinMage") || progress.includes("joinDefender") || progress.includes("joinHealer") || progress.includes("joinAlone")) {
         document.body.style.backgroundImage = "url('imageblur/dragonfly.jpg')";
     }
-    if (progress.includes("differentMage") || progress.includes("differentDefender") || progress.includes("differentHealer")) {
-        document.body.style.backgroundImage = "url('imageblur/hungrypeaks.jpg')";
-    }
-    if (progress.includes("climbMage") || progress.includes("climbDefender") || progress.includes("climbHealer")) {
-        document.body.style.backgroundImage = "url('imageblur/golem.jpg')";
-    }
-    if (progress.includes("hermitMage") || progress.includes("hermitDefender")) {
-        document.body.style.backgroundImage = "url('Images/hermit.jpg')";
-    }
     if (progress.includes("alonePath")) {
-        document.body.style.backgroundImage = "url('Images/cave.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/cave.jpg')";
     }
     if (progress.includes("enter")) {
-        document.body.style.backgroundImage = "url('Images/minotaur.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/minotaur.jpg')";
     }
     if (progress.includes("kill")) {
-        document.body.style.backgroundImage = "url('Images/dragon.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/dragon.jpg')";
     }
     if (progress.includes("tame")) {
-        document.body.style.backgroundImage = "url('Images/dragonfighting.jpg')";
+        document.body.style.backgroundImage = "url('imageblur/dragonfighting.jpg')";
     }
 };
 

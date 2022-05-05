@@ -74,6 +74,9 @@ a {
 .reload {
     font-size: 25px;
 }
+.credits:hover {
+    color: black;
+}
 
 @media screen and (max-width: 480px){
     h1 {
