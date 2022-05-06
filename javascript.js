@@ -667,7 +667,7 @@ function removeItems() {
 }
 
 function start() {
-    window.setTimeout(removeItems, 00);
+    window.setTimeout(removeItems, 500);
     fade();
 }
 
@@ -679,8 +679,8 @@ function fadeOut() {
     document.getElementById('items').style.opacity = '0';
     document.getElementById('buttons').style.opacity = '0';
     document.getElementById('title').style.opacity = '0';
-    window.setTimeout(fadeIn, 00);
-    window.setTimeout(removeTitle, 00);
+    window.setTimeout(fadeIn, 500);
+    window.setTimeout(removeTitle, 500);
 }
 function removeTitle() {
     document.getElementById('title').innerHTML = ""
